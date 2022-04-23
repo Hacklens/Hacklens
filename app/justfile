@@ -1,0 +1,19 @@
+default: init lint start
+
+build:
+  yarn build
+
+start:
+  yarn dev
+
+test:
+  yarn test
+
+lint:
+  yarn lint
+
+format:
+  yarn format
+
+init:
+  yarn install && echo "Remember to set up neccessary personal API keys. Follow the .env.sample for more instructions."
